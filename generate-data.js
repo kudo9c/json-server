@@ -10,8 +10,8 @@ const randomCityList = (numberOfCities) => {
     const cityList = []
     Array.from(new Array(numberOfCities)).forEach(() => {
         const city = {
-            id: casual.uuid,
-            city: casual.city,
+            code: casual.uuid,
+            name: casual.city,
             createdAt: Date.now(),
             updatedAt: Date.now()
         }
