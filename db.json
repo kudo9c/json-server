@@ -1,0 +1,536 @@
+{
+  "cities": [
+    {
+      "id": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0",
+      "city": "West Dandre",
+      "createdAt": 1648741743376,
+      "updatedAt": 1648741743376
+    },
+    {
+      "id": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e",
+      "city": "Jenniferberg",
+      "createdAt": 1648741743376,
+      "updatedAt": 1648741743376
+    },
+    {
+      "id": "3f6f415c-b605-423b-9292-cadf59dd2a12",
+      "city": "East Jettie",
+      "createdAt": 1648741743376,
+      "updatedAt": 1648741743376
+    },
+    {
+      "id": "fd0b2e40-863e-42ed-b3be-99576a02a890",
+      "city": "Lake Candida",
+      "createdAt": 1648741743376,
+      "updatedAt": 1648741743376
+    },
+    {
+      "id": "11baef49-1762-47da-951a-fd9b586ef70f",
+      "city": "New Dolly",
+      "createdAt": 1648741743376,
+      "updatedAt": 1648741743376
+    }
+  ],
+  "students": [
+    {
+      "id": "5476e1f2-b1c0-4ebd-b05f-43936091c3f9",
+      "name": "Theodore Gulgowski",
+      "age": 18,
+      "mark": 5.9,
+      "gender": "female",
+      "createdAt": 1648741743376,
+      "updatedAt": 1648741743376,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "5c587ea8-6920-4e7f-90f1-005396f04d24",
+      "name": "Donnell McLaughlin",
+      "age": 23,
+      "mark": 4.8,
+      "gender": "female",
+      "createdAt": 1648741743376,
+      "updatedAt": 1648741743376,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "68bb45e7-567d-42fc-b852-ee7d33ed5ede",
+      "name": "Dejon Denesik",
+      "age": 23,
+      "mark": 5,
+      "gender": "female",
+      "createdAt": 1648741743376,
+      "updatedAt": 1648741743376,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "a4aee717-6bbe-4f6c-ae60-e28b4fcd8280",
+      "name": "Willy Von",
+      "age": 16,
+      "mark": 4.8,
+      "gender": "female",
+      "createdAt": 1648741743377,
+      "updatedAt": 1648741743377,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "e9793dee-449b-4672-915c-fb00e77cfa1d",
+      "name": "Kasandra Weissnat",
+      "age": 18,
+      "mark": 7.2,
+      "gender": "female",
+      "createdAt": 1648741743377,
+      "updatedAt": 1648741743377,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "8fb081c7-7335-467d-b7ef-3df52e0bfb32",
+      "name": "Joanne Nikolaus",
+      "age": 20,
+      "mark": 7.8,
+      "gender": "female",
+      "createdAt": 1648741743377,
+      "updatedAt": 1648741743377,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "55901a6e-7c6d-45e1-82ca-22924e8498cf",
+      "name": "Gideon Murphy",
+      "age": 16,
+      "mark": 8,
+      "gender": "male",
+      "createdAt": 1648741743377,
+      "updatedAt": 1648741743377,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "c6c9a4ea-c3c6-4821-bfe3-b07606eeb26f",
+      "name": "Evans Okuneva",
+      "age": 23,
+      "mark": 6.1,
+      "gender": "male",
+      "createdAt": 1648741743377,
+      "updatedAt": 1648741743377,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "96db7651-556b-4e59-9ffc-55958abb514e",
+      "name": "Susana Cummerata",
+      "age": 23,
+      "mark": 4.3,
+      "gender": "female",
+      "createdAt": 1648741743377,
+      "updatedAt": 1648741743377,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "9c3841ea-3c05-4fb7-bcfa-8807584f8898",
+      "name": "Jabari Green",
+      "age": 20,
+      "mark": 5.2,
+      "gender": "female",
+      "createdAt": 1648741743377,
+      "updatedAt": 1648741743377,
+      "city": "b2308a3a-4e7b-4398-86dd-0a49b7c547d0"
+    },
+    {
+      "id": "781bf0ef-1876-4194-8d25-f76b7126217d",
+      "name": "Assunta Runolfsson",
+      "age": 21,
+      "mark": 3.1,
+      "gender": "male",
+      "createdAt": 1648741743377,
+      "updatedAt": 1648741743377,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "8b438cd8-4974-40fe-9b40-89ece426a084",
+      "name": "Alayna Langosh",
+      "age": 18,
+      "mark": 6.4,
+      "gender": "female",
+      "createdAt": 1648741743377,
+      "updatedAt": 1648741743377,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "797b8ffc-e501-44d0-8d74-3ae265583d66",
+      "name": "Reyna Aufderhar",
+      "age": 16,
+      "mark": 1,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "57a3d543-3700-46dd-982d-2970f07ffb82",
+      "name": "Maud Hilpert",
+      "age": 19,
+      "mark": 5,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "ed50f98e-e5e1-4df4-a44c-584519c3b889",
+      "name": "Neva Mann",
+      "age": 18,
+      "mark": 6.6,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "88198573-58c7-4e48-b832-e77fe15345b8",
+      "name": "Linnie Denesik",
+      "age": 24,
+      "mark": 3.7,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "b0f6c032-90d0-44e0-aeca-1da970e44dae",
+      "name": "Rosetta Crona",
+      "age": 19,
+      "mark": 1.4,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "1f5fad84-9d99-47e4-b7af-5a255f2b9ed0",
+      "name": "Erik Gleason",
+      "age": 22,
+      "mark": 6.7,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "d2a71887-44ba-4f08-bbc4-309c01468efb",
+      "name": "Cecil Feil",
+      "age": 18,
+      "mark": 6.8,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "9901f924-64f4-4dbc-a21e-926f625a5307",
+      "name": "Dante Roberts",
+      "age": 19,
+      "mark": 3.7,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "9e33a613-c5b8-4e48-82d8-2ca03beaad8e"
+    },
+    {
+      "id": "6e146beb-5576-4c8f-8a96-a560b606f143",
+      "name": "Pattie Halvorson",
+      "age": 21,
+      "mark": 9.7,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "8948975f-3823-4a72-a971-851d8b708ac9",
+      "name": "Molly Little",
+      "age": 21,
+      "mark": 6,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "b4de33d1-7560-46e7-981d-a0d605d2fdaa",
+      "name": "Taurean Tillman",
+      "age": 21,
+      "mark": 9.1,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "27c02921-d7a1-4e3e-941c-c7af0b2188e8",
+      "name": "Erica Larkin",
+      "age": 20,
+      "mark": 4.7,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "18d49c15-36bc-47e5-9afb-fca5e3beadf3",
+      "name": "Treva Larkin",
+      "age": 17,
+      "mark": 5.6,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "5bd9d22b-c237-46d2-b83b-0a2e1446ae52",
+      "name": "Marta Reichert",
+      "age": 21,
+      "mark": 4.5,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "1a00ca1c-9b44-4fea-aec4-4772c266b69e",
+      "name": "Martin Konopelski",
+      "age": 19,
+      "mark": 7.7,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "27af7440-3cbc-4143-9288-6148b2e1ef8c",
+      "name": "Hyman Carroll",
+      "age": 17,
+      "mark": 7.1,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "b34ac94d-bbf3-4f1c-b001-36eaaebdc027",
+      "name": "Paul Hickle",
+      "age": 21,
+      "mark": 1.2,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "6fc0a9f5-6a7a-4adc-890d-0df87f8e0e92",
+      "name": "Antonetta Lakin",
+      "age": 17,
+      "mark": 1.5,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "3f6f415c-b605-423b-9292-cadf59dd2a12"
+    },
+    {
+      "id": "336faa84-0d09-4993-8cbd-ba7d33ff51e7",
+      "name": "Woodrow Tremblay",
+      "age": 20,
+      "mark": 3.1,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "8bad0070-d3a1-420e-9d3a-f181fdbc5599",
+      "name": "Bruce VonRueden",
+      "age": 21,
+      "mark": 2.8,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "59b0429b-c308-45a2-8cca-28dbbd18a311",
+      "name": "Wyatt Schinner",
+      "age": 21,
+      "mark": 1.6,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "4bb12303-1642-4746-95ba-37e5ba32652a",
+      "name": "German Carter",
+      "age": 16,
+      "mark": 5.5,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "e92d3744-0cf7-4f2b-8e19-3509c523ca39",
+      "name": "Jonas Hand",
+      "age": 22,
+      "mark": 2.7,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "0cbc17ce-b12a-425d-aa97-82529029ec30",
+      "name": "Mae Bogan",
+      "age": 20,
+      "mark": 2.8,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "86af3a2a-3de4-4520-996a-54dd3f47861b",
+      "name": "Diamond Keeling",
+      "age": 21,
+      "mark": 7.4,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "d52d8948-bc58-49ef-9f62-022c5ccfc446",
+      "name": "Maudie Cormier",
+      "age": 22,
+      "mark": 4.8,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "86548b02-f4cd-45da-94bd-aa3990ef32c0",
+      "name": "Lillian Heaney",
+      "age": 16,
+      "mark": 3,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "039574e5-afe2-441f-a489-e8771f88646f",
+      "name": "Joshuah Price",
+      "age": 17,
+      "mark": 4.9,
+      "gender": "male",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "fd0b2e40-863e-42ed-b3be-99576a02a890"
+    },
+    {
+      "id": "5e895921-534f-496b-9d7c-0bf898796874",
+      "name": "Lucie Langosh",
+      "age": 23,
+      "mark": 1.8,
+      "gender": "female",
+      "createdAt": 1648741743378,
+      "updatedAt": 1648741743378,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    },
+    {
+      "id": "b38e1c6c-4d07-4058-be10-cc37738eef34",
+      "name": "Kim Jerde",
+      "age": 20,
+      "mark": 2,
+      "gender": "female",
+      "createdAt": 1648741743379,
+      "updatedAt": 1648741743379,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    },
+    {
+      "id": "47d40aeb-ccb0-475a-a9eb-30943f6086e2",
+      "name": "Guido Will",
+      "age": 18,
+      "mark": 5.3,
+      "gender": "female",
+      "createdAt": 1648741743379,
+      "updatedAt": 1648741743379,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    },
+    {
+      "id": "b4ecffa8-9b7e-442f-afe3-a80ac3c6edee",
+      "name": "Cade Dickinson",
+      "age": 20,
+      "mark": 2.1,
+      "gender": "female",
+      "createdAt": 1648741743379,
+      "updatedAt": 1648741743379,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    },
+    {
+      "id": "3a6ebbe0-385c-4541-9882-9afe34bcad63",
+      "name": "Abbie Von",
+      "age": 18,
+      "mark": 9.3,
+      "gender": "female",
+      "createdAt": 1648741743379,
+      "updatedAt": 1648741743379,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    },
+    {
+      "id": "f9500b34-aabe-4241-9597-04828b901e93",
+      "name": "Kassandra Walter",
+      "age": 20,
+      "mark": 1.3,
+      "gender": "female",
+      "createdAt": 1648741743379,
+      "updatedAt": 1648741743379,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    },
+    {
+      "id": "37cd5e8e-596d-4c81-a908-928e7e0bb713",
+      "name": "Hal Ernser",
+      "age": 17,
+      "mark": 8,
+      "gender": "male",
+      "createdAt": 1648741743379,
+      "updatedAt": 1648741743379,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    },
+    {
+      "id": "d103ccad-9997-4577-9b5c-41041bccc2fe",
+      "name": "Kasey Hackett",
+      "age": 21,
+      "mark": 1.5,
+      "gender": "male",
+      "createdAt": 1648741743379,
+      "updatedAt": 1648741743379,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    },
+    {
+      "id": "cb17e1f8-31f6-4932-9295-9d8a5e15096d",
+      "name": "Rosemary Crist",
+      "age": 23,
+      "mark": 4.5,
+      "gender": "female",
+      "createdAt": 1648741743379,
+      "updatedAt": 1648741743379,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    },
+    {
+      "id": "9413592f-aae7-46a0-b0d5-7a5677234a51",
+      "name": "Werner Doyle",
+      "age": 18,
+      "mark": 5.5,
+      "gender": "female",
+      "createdAt": 1648741743379,
+      "updatedAt": 1648741743379,
+      "city": "11baef49-1762-47da-951a-fd9b586ef70f"
+    }
+  ]
+}
