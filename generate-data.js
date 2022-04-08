@@ -35,8 +35,7 @@ const randomStudentList = (cityList, numberOfStudents) => {
                 gender: casual.random_element(["male","female"]),
                 createdAt: Date.now(),
                 updatedAt: Date.now(),
-                city: city.id
-
+                city: city.code
             }
             studentList.push(student)
         })
