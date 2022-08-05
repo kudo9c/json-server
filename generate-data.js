@@ -42,28 +42,6 @@ const courseList = [
 // Generate random sentence
 // You don't need function call operator here
 // because most of generators use properties mechanism
-const randomCourseList = (numberOfCourse) => {
-    if(numberOfCourse <= 0) return []
-    const courseList = []
-    Array.from(new Array(numberOfCourse)).forEach(() => {
-        const course = {
-            id: casual.uuid,
-            courseName: casual.title,
-            description: casual.description,
-            image: 'https://utexlms.hcmute.edu.vn/pluginfile.php/11/theme_maker/defaultcourseimage/1639153832/course-banner.jpg',
-            tuition: casual.integer(from=30,to=100),
-            startTime: casual.unix_time,
-            endTime: casual.unix_time,
-            status: casual.random_element([-1,1,5]),
-            createdAt: Date.now(),
-            updatedAt: Date.now()
-        }
-        courseList.push(course)
-    })
-
-    return courseList
-}
-
 const randomStudentList = (courseList, numberOfStudents) => {
     if(numberOfStudents <= 0) return []
     const studentList = []
@@ -220,13 +198,13 @@ const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList,
     const courseTuitionList = randomCourseTuitionList(courseList,1,studentList,courseRegisterList)
     // db
     const db = {
-        courses: courseList,
-        students: studentList,
-        teachers: teacherList,
-        courseRegisters: courseRegisterList,
-        courseResults: courseResultList,
-        courseAttends: courseAttendList,
-        courseTuitions: courseTuitionList,
+        course: courseList,
+        student: studentList,
+        teacher: teacherList,
+        courseRegister: courseRegisterList,
+        courseResult: courseResultList,
+        courseAttendance: courseAttendList,
+        courseTuition: courseTuitionList,
     }
     fs.writeFile('db.json',JSON.stringify(db), () => {
         console.log("Generate data success!")
