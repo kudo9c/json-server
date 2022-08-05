@@ -1,7 +1,44 @@
 const casual = require('casual').en_US;
 const fs = require("fs")
 
-
+const courseList = [
+    {
+        "id": "0f6dbeb8-890e-413b-8c35-fb60a1c1947a",
+        "courseName": "Learning HTML&CSS",
+        "description": "Corrupti accusantium asperiores quo explicabo non consequatur vitae. Occaecati tempore repudiandae vero. Asperiores quo enim. Sunt consequatur voluptatem animi id.",
+        "image": "https://tse2.mm.bing.net/th?id=OIP.q-QpE2FpQY2eo-LGSSNPmgHaEK&pid=Api&P=0",
+        "tuition": 80,
+        "startTime": "1 June 2022",
+        "endTime": '1 July 2022',
+        "status": 1,
+        "createdAt": 1659546675731,
+        "updatedAt": 1659546675731
+    },
+    {
+        "id": "b3e990a6-f34d-433d-a703-b4c61ec5ada6",
+        "courseName": "Learning JavaScript",
+        "description": "Id eius excepturi corporis et nisi facere. Sapiente ea ut modi. Ut sint magni est consequatur cupiditate a. Sapiente ipsa voluptas.",
+        "image": "https://tse3.mm.bing.net/th?id=OIP.GnVutspHEXfNvSMXRa9YhQHaHa&pid=Api&P=0",
+        "tuition": 37,
+        "startTime": '20 June 2022',
+        "endTime": '3 August 2022',
+        "status": 1,
+        "createdAt": 1659546675731,
+        "updatedAt": 1659546675731
+    },
+    {
+        "id": "f574b32c-f1d7-4522-96fb-c94f62675118",
+        "courseName": "Linux and Ubuntu",
+        "description": "Ut labore rem rem. Quia accusantium sit illum. Quos totam provident ipsa et.",
+        "image": "https://tse4.mm.bing.net/th?id=OIP.hP3KayOf9x93Taj_aJ1hcQHaFj&pid=Api&P=0",
+        "tuition": 81,
+        "startTime": '1 August 2022',
+        "endTime": '20 September 2022',
+        "status": 5,
+        "createdAt": 1659546675731,
+        "updatedAt": 1659546675731
+    },
+]
 // Generate random sentence
 // You don't need function call operator here
 // because most of generators use properties mechanism
@@ -175,7 +212,6 @@ const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList,
 
 (() => {
     //random data
-    const courseList = randomCourseList(10)
     const studentList = randomStudentList(courseList,2)
     const teacherList = randomTeacherList(courseList,1)
     const courseRegisterList = randomCourseRegisterList(courseList,1,studentList)
