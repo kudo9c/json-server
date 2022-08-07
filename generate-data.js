@@ -173,7 +173,7 @@ const randomCourseRegisterList = (courseList, numberOfCourseRegisters,studentLis
                     updatedAt: Date.now(),
                     address: casual.address,
                     courseId: course.id,
-                    studentId: student.id
+                    studentId: casual.random_element(['62e7e5da84939aa9e320a443', '62e7e5ea84939aa9e320a444', '62e7e62484939aa9e320a446', '62e7e64f84939aa9e320a447', '62efd1e67ec131b24eb06de8'])
                 }
                 courseRegisterList.push(courseRegister)
             })
@@ -197,8 +197,8 @@ const randomCourseResultList = (courseList, numberOfCourseResults,studentList,te
                         createdAt: Date.now(),
                         updatedAt: Date.now(),
                         courseId: course.id,
-                        studentId: student.id,
-                        teacherId: teacher.id
+                        studentId: casual.random_element(['62e7e5da84939aa9e320a443', '62e7e5ea84939aa9e320a444', '62e7e62484939aa9e320a446', '62e7e64f84939aa9e320a447', '62efd1e67ec131b24eb06de8']),
+                        teacherId: casual.random_element( ['62e7e06284939aa9e320a43f', '62e7e5b284939aa9e320a440', '62e7e5c584939aa9e320a441'])
                     }
                     courseResultList.push(courseResult)
                 })
@@ -222,7 +222,7 @@ const randomCourseAttendList = (courseList, numberOfCourseAttends,studentList,te
                         updatedAt: Date.now(),
                         courseId: course.id,
                         studentId: student.id,
-                        teacherId: teacher.id
+                        teacherId: casual.random_element( ['62e7e06284939aa9e320a43f', '62e7e5b284939aa9e320a440', '62e7e5c584939aa9e320a441'])
                     }
                     courseAttendList.push(courseAttend)
                 })
