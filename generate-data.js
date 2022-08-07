@@ -118,6 +118,8 @@ const randomStudentList = (courseList, numberOfStudents) => {
                 fullName: casual.full_name,
                 age: casual.integer(from=16, to=24),
                 gender: casual.random_element(["male","female"]),
+                email: casual.email,
+                mobile: casual.phone,
                 status: "active",
                 createdAt: Date.now(),
                 updatedAt: Date.now(),
