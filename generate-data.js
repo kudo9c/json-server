@@ -12,7 +12,9 @@ const courseList = [
         "endTime": '1 July 2022',
         "status": 1,
         "createdAt": 1659546675731,
-        "updatedAt": 1659546675731
+        "updatedAt": 1659546675731,
+        "student": ['62e7e62484939aa9e320a446','62e7e64f84939aa9e320a447'],
+        "teacher": ['62e7e06284939aa9e320a43f','62e7e5b284939aa9e320a440']
     },
     {
         "id": "b3e990a6-f34d-433d-a703-b4c61ec5ada6",
@@ -24,7 +26,9 @@ const courseList = [
         "endTime": '3 August 2022',
         "status": 1,
         "createdAt": 1659546675731,
-        "updatedAt": 1659546675731
+        "updatedAt": 1659546675731,
+        "student": ['62e7e62484939aa9e320a446','62e7e64f84939aa9e320a447'],
+        "teacher": ['62e7e06284939aa9e320a43f','62e7e5b284939aa9e320a440']
     },
     {
         "id": "f574b32c-f1d7-4522-96fb-c94f62675118",
@@ -36,7 +40,9 @@ const courseList = [
         "endTime": '20 September 2022',
         "status": 5,
         "createdAt": 1659546675731,
-        "updatedAt": 1659546675731
+        "updatedAt": 1659546675731,
+        "student": ['62e7e62484939aa9e320a446','62e7e64f84939aa9e320a447'],
+        "teacher": ['62e7e06284939aa9e320a43f','62e7e5b284939aa9e320a440']
     },
     {
         "id": casual.uuid,
@@ -47,6 +53,8 @@ const courseList = [
         "startTime": '1 September 2020',
         "endTime": '20 September 2020',
         "status": -1,
+        "student": ['62e7e62484939aa9e320a446','62e7e64f84939aa9e320a447'],
+        "teacher": ['62e7e06284939aa9e320a43f','62e7e5b284939aa9e320a440']
     },
     {
         "id": casual.uuid,
@@ -57,6 +65,8 @@ const courseList = [
         "startTime": '10 April 2022',
         "endTime": '19 August 2022',
         "status": 1,
+        "student": ['62e7e62484939aa9e320a446','62e7e64f84939aa9e320a447'],
+        "teacher": ['62e7e06284939aa9e320a43f','62e7e5b284939aa9e320a440']
     },
     {
         "id": casual.uuid,
@@ -67,6 +77,8 @@ const courseList = [
         "startTime": '1 July 2021',
         "endTime": '10 November 2021',
         "status": 5,
+        "student": ['62e7e62484939aa9e320a446','62e7e64f84939aa9e320a447'],
+        "teacher": ['62e7e06284939aa9e320a43f','62e7e5b284939aa9e320a440']
     },
     {
         "id": casual.uuid,
@@ -77,6 +89,8 @@ const courseList = [
         "startTime": '1 April 2022',
         "endTime": '10 May 2022',
         "status": 1,
+        "student": ['62e7e62484939aa9e320a446','62e7e64f84939aa9e320a447'],
+        "teacher": ['62e7e06284939aa9e320a43f','62e7e5b284939aa9e320a440']
     },
     {
         "id": casual.uuid,
@@ -87,6 +101,8 @@ const courseList = [
         "startTime": '1 August 2022',
         "endTime": '10 November 2022',
         "status": 1,
+        "student": ['62e7e62484939aa9e320a446','62e7e64f84939aa9e320a447'],
+        "teacher": ['62e7e06284939aa9e320a43f','62e7e5b284939aa9e320a440']
     },
 ]
 // Generate random sentence
