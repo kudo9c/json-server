@@ -129,6 +129,7 @@ const randomCourseRegisterList = (courseList, numberOfCourseRegisters,studentLis
                     updatedAt: Date.now(),
                     address: casual.address,
                     courseId: course.id,
+                    courseName: course.courseName,    
                     studentId: student
                 }
                 courseRegisterList.push(courseRegister)
