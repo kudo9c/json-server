@@ -3,6 +3,7 @@ const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 const queryString = require('query-string')
+const casual = require('casual').en_US;
 
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares)
@@ -17,6 +18,7 @@ server.get('/echo', (req, res) => {
 server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
   if (req.method === 'POST') {
+    req.body.id = casual.uuid
     req.body.createdAt = Date.now()
     req.body.updatedAt = Date.now()
   } else if (req.method === 'PATCH') {
