@@ -108,51 +108,7 @@ const courseList = [
 // Generate random sentence
 // You don't need function call operator here
 // because most of generators use properties mechanism
-const randomStudentList = (courseList, numberOfStudents) => {
-    if(numberOfStudents <= 0) return []
-    const studentList = []
-    for(const course of courseList){
-        Array.from(new Array(numberOfStudents)).forEach(() => {
-            const student = {
-                id: casual.uuid,
-                fullName: casual.full_name,
-                age: casual.integer(from=16, to=24),
-                gender: casual.random_element(["male","female"]),
-                email: casual.email,
-                mobile: casual.phone,
-                status: "active",
-                createdAt: Date.now(),
-                updatedAt: Date.now(),
-                address: casual.address,
-                courseId: course.id
-            }
-            studentList.push(student)
-        })
-    }
-    return studentList
-}
 
-const randomTeacherList = (courseList, numberOfTeachers) => {
-    if(numberOfTeachers <= 0) return []
-    const teacherList = []
-    for(const course of courseList){
-        Array.from(new Array(numberOfTeachers)).forEach(() => {
-            const teacher = {
-                id: casual.uuid,
-                fullName: casual.full_name,
-                age: casual.integer(from=24, to=45),
-                gender: casual.random_element(["male","female"]),
-                status: "active",
-                createdAt: Date.now(),
-                updatedAt: Date.now(),
-                address: casual.address,
-                courseId: course.id
-            }
-            teacherList.push(teacher)
-        })
-    }
-    return teacherList
-}
 
 const randomCourseRegisterList = (courseList, numberOfCourseRegisters,studentList) => {
     if(numberOfCourseRegisters <= 0) return []
@@ -173,7 +129,7 @@ const randomCourseRegisterList = (courseList, numberOfCourseRegisters,studentLis
                     updatedAt: Date.now(),
                     address: casual.address,
                     courseId: course.id,
-                    studentId: casual.random_element(['62e7e5da84939aa9e320a443', '62e7e5ea84939aa9e320a444', '62e7e62484939aa9e320a446', '62e7e64f84939aa9e320a447', '62efd1e67ec131b24eb06de8'])
+                    studentId: student
                 }
                 courseRegisterList.push(courseRegister)
             })
@@ -197,8 +153,8 @@ const randomCourseResultList = (courseList, numberOfCourseResults,studentList,te
                         createdAt: Date.now(),
                         updatedAt: Date.now(),
                         courseId: course.id,
-                        studentId: casual.random_element(['62e7e5da84939aa9e320a443', '62e7e5ea84939aa9e320a444', '62e7e62484939aa9e320a446', '62e7e64f84939aa9e320a447', '62efd1e67ec131b24eb06de8']),
-                        teacherId: casual.random_element( ['62e7e06284939aa9e320a43f', '62e7e5b284939aa9e320a440', '62e7e5c584939aa9e320a441'])
+                        studentId: student,
+                        teacherId: teacher
                     }
                     courseResultList.push(courseResult)
                 })
@@ -221,8 +177,8 @@ const randomCourseAttendList = (courseList, numberOfCourseAttends,studentList,te
                         createdAt: Date.now(),
                         updatedAt: Date.now(),
                         courseId: course.id,
-                        studentId: student.id,
-                        teacherId: casual.random_element( ['62e7e06284939aa9e320a43f', '62e7e5b284939aa9e320a440', '62e7e5c584939aa9e320a441'])
+                        studentId: student,
+                        teacherId: teacher
                     }
                     courseAttendList.push(courseAttend)
                 })
@@ -245,7 +201,7 @@ const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList,
                         createdAt: Date.now(),
                         updatedAt: Date.now(),
                         courseId: course.id,
-                        studentId: student.id,
+                        studentId: student,
                         courseRegisterId: courseRegister.id
                     }
                     courseTuitionList.push(courseTuition)
@@ -258,8 +214,8 @@ const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList,
 
 (() => {
     //random data
-    const studentList = randomStudentList(courseList,2)
-    const teacherList = randomTeacherList(courseList,1)
+    const studentList = ['62e7e5da84939aa9e320a443', '62e7e5ea84939aa9e320a444', '62e7e62484939aa9e320a446', '62e7e64f84939aa9e320a447', '62efd1e67ec131b24eb06de8']
+    const teacherList = ['62e7e06284939aa9e320a43f', '62e7e5b284939aa9e320a440', '62e7e5c584939aa9e320a441']
     const courseRegisterList = randomCourseRegisterList(courseList,1,studentList)
     const courseResultList = randomCourseResultList(courseList,1,studentList,teacherList)
     const courseAttendList = randomCourseAttendList(courseList,1,studentList,teacherList)
@@ -267,8 +223,6 @@ const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList,
     // db
     const db = {
         course: courseList,
-        student: studentList,
-        teacher: teacherList,
         courseRegister: courseRegisterList,
         courseResult: courseResultList,
         courseAttendance: courseAttendList,
