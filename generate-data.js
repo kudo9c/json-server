@@ -123,7 +123,7 @@ const randomCourseRegisterList = (courseList, numberOfCourseRegisters,studentLis
                         address: student.address,
                         tuition: course.tuition,
                         mobile: casual.phone,
-                        status: casual.random_element(['approve','cancel','not approved']),
+                        status: casual.random_element(['cancel','not approved']),
                         age: casual.integer(from=24, to=45),
                         gender: casual.random_element(["male","female"]),
                         createdAt: Date.now(),
