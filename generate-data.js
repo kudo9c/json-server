@@ -116,23 +116,25 @@ const randomCourseRegisterList = (courseList, numberOfCourseRegisters,studentLis
     for(const course of courseList){
         for(const student of studentList){
             Array.from(new Array(numberOfCourseRegisters)).forEach(() => {
-                const courseRegister = {
-                    id: casual.uuid,
-                    fullName: casual.full_name,
-                    address: student.address,
-                    tuition: course.tuition,
-                    mobile: casual.phone,
-                    status: casual.random_element([-1,1,5]),
-                    age: casual.integer(from=24, to=45),
-                    gender: casual.random_element(["male","female"]),
-                    createdAt: Date.now(),
-                    updatedAt: Date.now(),
-                    address: casual.address,
-                    courseId: course.id,
-                    courseName: course.courseName,    
-                    studentId: student
+                if(course.status === 1){
+                    const courseRegister = {
+                        id: casual.uuid,
+                        fullName: casual.full_name,
+                        address: student.address,
+                        tuition: course.tuition,
+                        mobile: casual.phone,
+                        status: casual.random_element([-1,1,5]),
+                        age: casual.integer(from=24, to=45),
+                        gender: casual.random_element(["male","female"]),
+                        createdAt: Date.now(),
+                        updatedAt: Date.now(),
+                        address: casual.address,
+                        courseId: course.id,
+                        courseName: course.courseName,    
+                        studentId: student
+                    }
+                    courseRegisterList.push(courseRegister)
                 }
-                courseRegisterList.push(courseRegister)
             })
         }
     }
