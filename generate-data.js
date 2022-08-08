@@ -200,7 +200,7 @@ const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList,
                 Array.from(new Array(numberOfCourseTuitions)).forEach(() => {
                     const courseTuition = {
                         id: casual.uuid,
-                        status: casual.random_element(['present','late','absent']),
+                        status: casual.random_element(['paid','unpaid']),
                         createdAt: Date.now(),
                         updatedAt: Date.now(),
                         courseId: course.id,
