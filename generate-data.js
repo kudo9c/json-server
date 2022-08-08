@@ -118,7 +118,7 @@ const randomCourseRegisterList = (courseList, numberOfCourseRegisters,studentLis
             Array.from(new Array(numberOfCourseRegisters)).forEach(() => {
                 const courseRegister = {
                     id: casual.uuid,
-                    fullName: student.fullName,
+                    fullName: casual.full_name,
                     address: student.address,
                     tuition: course.tuition,
                     mobile: casual.phone,
