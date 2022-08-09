@@ -205,7 +205,6 @@ const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList)
                             updatedAt: Date.now(),
                             courseId: course.id,
                             studentId: student,
-                            courseRegisterId: courseRegister.id,
                             total: course.tuition,
                             courseName: course.courseName,
                         }
