@@ -191,29 +191,31 @@ const randomCourseAttendList = (courseList, numberOfCourseAttends,studentList,te
     return courseAttendList
 }
 
-const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList,courseRegisterList) => {
+const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList) => {
     if(numberOfCourseTuitions <= 0) return []
     const courseTuitionList = []
     for(const course of courseList){
         for(const student of studentList){
-            for(const courseRegister of courseRegisterList){
                 Array.from(new Array(numberOfCourseTuitions)).forEach(() => {
-                    const courseTuition = {
-                        id: casual.uuid,
-                        status: casual.random_element(['paid','unpaid']),
-                        createdAt: Date.now(),
-                        updatedAt: Date.now(),
-                        courseId: course.id,
-                        studentId: student,
-                        courseRegisterId: courseRegister.id
+                    if(course.status === 1){
+                        const courseTuition = {
+                            id: casual.uuid,
+                            status: casual.random_element(['paid','unpaid']),
+                            createdAt: Date.now(),
+                            updatedAt: Date.now(),
+                            courseId: course.id,
+                            studentId: student,
+                            courseRegisterId: courseRegister.id,
+                            total: course.tuition,
+                            courseName: course.courseName,
+                        }
+                        courseTuitionList.push(courseTuition)
                     }
-                    courseTuitionList.push(courseTuition)
                 })
-            }
-        }
-    }
+    }}
     return courseTuitionList
 }
+
 
 (() => {
     //random data
@@ -222,7 +224,7 @@ const randomCourseTuitionList = (courseList, numberOfCourseTuitions,studentList,
     const courseRegisterList = randomCourseRegisterList(courseList,1,studentList)
     const courseResultList = randomCourseResultList(courseList,1,studentList,teacherList)
     const courseAttendList = randomCourseAttendList(courseList,1,studentList,teacherList)
-    const courseTuitionList = randomCourseTuitionList(courseList,1,studentList,courseRegisterList)
+    const courseTuitionList = randomCourseTuitionList(courseList,1,['62e7e62484939aa9e320a446','62e7e64f84939aa9e320a447'])
     // db
     const db = {
         course: courseList,
